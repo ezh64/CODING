@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Pages</title>
+    <style>
+        body{text-align:center;}
+        table, th, td {border: 1px solid black; align:center;}
+        .center {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        #list-1{display: inline-block;text-align: left;}
+    </style>
+</head>
+<body>
+  <div style="background-color:lightblue">
+    <h2 id="heading">Navigate To Different Web Pages</h2><br>
+    <a id="login" href="#login-form">LOGIN</a><br>
+    <br>
+    <a id="table" href="#table-1">TABLE</a><br>
+    <br>
+    <a id="about" href="#about-heading">ABOUT</a>
+  </div>
+  <div style="background-color:lightblue">
+    <h4>Registration</h4><br>
+    <form id="login-form">
+        <label>Name :</label>
+        <input type="text" id="name"><br>
+        <label>Password :</label>
+        <input type="text"><br>
+        <label>Email :</label>
+        <input type="text"><br>
+        <label for="courses">Courses :</label>
+        <select name="Courses" id="course">
+          <option value="INFORMATION TECHNOLOGY">INFORMATION TECHNOLOGY</option>
+          <option value="MECHANICAL ENGINEERING">MECHANICAL ENGINEERING</option>
+          <option value="AERONAUTICAL ENGINEERING">AERONAUTICAL ENGINEERING</option>
+          <option value="CIVIL ENGINEERING">CIVIL ENGINEERING</option>
+          <option value="AUTOMOBILE ENGINEERING">AUTOMOBILE ENGINEERING</option>
+          <option value="AGRICULTURAL ENGINEERING">AGRICULTURAL ENGINEERING</option>
+          <option value="ELECTRONICS & COMMUNICATION ENGINEERING">ELECTRONICS & COMMUNICATION ENGINEERING</option>
+        </select><br>
+        <label for="Address">Address :</label>
+        <textarea id="Address" name="Address" rows="4" cols="50"></textarea><br>
+        <label for="Country">Country :</label>
+        <input list="Countries" name="Countries" id="Country">
+        <datalist id="Countries">
+          <option value="INDIA">INDIA</option>
+          <option value="FRANCE">FRANCE</option>
+          <option value="MEXICO">MEXICO</option>
+          <option value="SOUTH KOREA">SOUTH KOREA</option>
+          <option value="JAPAN">JAPAN</option>
+          <option value="AUSTRALIA">AUSTRALIA</option>
+        </datalist><br>
+        <button id="submit_btn" type="submit" form="login-form" value="Submit">Submit</button>
+    </form></div>
+  <div style="background-color:lightblue">
+        <h1 id="heading">TABLES AND LISTS</h1><br>
+        <table class="center" id="table-1""width:50%">
+        <tr><th>Roll No</th><th>Name</th><th>Course</th><th>Department</th></tr>
+        <tr><td>001</td><td>AKASH</td><td>AGRICULTURAL ENGINEERING</td><td>AE</td></tr>
+        <tr><td>002</td><td>ASHWINI</td><td>ELECTRONICS & COMMUNICATION ENGINEERING</td><td>ECE</td></tr>
+        <tr><td>003</td><td>ASVANTH</td><td>MECHANICAL ENGINEERING</td><td>ME</td></tr>
+        <tr><td>004</td><td>BARATH</td><td>ELECTRONICS & COMMUNICATION ENGINEERING</td><td>ECE</td></tr>
+        <tr><td>005</td><td>EZHIL ARASI</td><td>INFORMATION TECHNOLOGY</td><td>IT</td></tr>
+        <tr><td>006</td><td>GANESH</td><td>ELECTRONICS & COMMUNICATION ENGINEERING</td><td>ECE</td></tr>
+        <tr><td>007</td><td>HARINI</td><td>AGRICULTURAL ENGINEERING</td><td>AE</td></tr>
+        <tr><td>008</td><td>KAVYA</td><td>AUTOMOBILE ENGINEERING</td><td>AE</td></tr>
+        <tr><td>009</td><td>MURUGASEN</td><td>ELECTRONICS & COMMUNICATION ENGINEERING</td><td>ECE</td></tr>
+        <tr><td>010</td><td>PRIYA</td><td>MECHANICAL ENGINEERING</td><td>ME</td></tr>
+        <tr><td>011</td><td>RANJITH KUMAR</td><td>MECHANICAL ENGINEERING</td><td>ME</td></tr>
+        <tr><td>012</td><td>YAMINI</td><td>AERONAUTICAL ENGINEERING</td><td>AE</td></tr>
+        <tr><td>013</td><td>YOGA LAKSHMI</td><td>CIVIL ENGINEERING</td><td>CE</td></tr>
+        </table><br>
+        <h2 id="courses">No Of Courses Available</h2>
+        <ul id="list-1"><li>INFORMATION TECHNOLOGY</li><li>MECHANICAL ENGINEERING</li><li>CIVIL ENGINEERING</li><li>AUTOMOBILE ENGINEERING</li><li>AGRICULTURAL ENGINEERING</li><li>ELECTRONICS & COMMUNICATION ENGINEERING</li></ul>
+   </div>
+  <div style="background-color:lightblue">
+    <h1 id="about-heading">About Page</h1>
+    <p id="description">A page is one side of a leaf of paper, parchment or other material in a book, magazine, newspaper, or other collection of  sheets, on which text or illustration can be printed, written or drawn, to create document. it can be used as measure of communication general quality of information or more specific quantity. </p>
+  </div>
+</body>
+</html>
